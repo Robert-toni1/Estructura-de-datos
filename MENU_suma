@@ -1,0 +1,85 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int suma (int a,int b)
+{
+	int suma=0;
+	suma=a+b;
+	
+	return suma;
+	
+}
+int mul(int a,int b)
+{
+	int mul=1;
+	mul=a*b;
+	
+	
+	
+	return mul;
+}
+
+
+int main()
+{
+	
+	int a,b,k,p,opc;
+	int resta=0;
+	do{
+	cout<<"****************MENU******************"<<endl;
+	cout<<"1. suma:  "<<endl;
+	cout<<"2. multiplicaion: "<<endl;
+	cout<<"3. resta : "<<endl;
+	cout<<"4. salir"<<endl;
+	cin>>opc;
+	
+	
+
+	switch(opc)
+	{
+		
+		case  1:
+			{
+				cout<<"ingrese el valor de a: "<<endl;
+				cin>>a;
+				cout<<"ingrese el valor de b: "<<endl;
+				cin>>b;
+				k=suma(a,b);
+				cout<<"suma = "<<k<<endl;
+				
+				
+			}
+			break;
+		case 2:
+			{
+				cout<<"ingrese el valor de a: "<<endl;
+				cin>>a;
+				cout<<"ingrese el valor de b: "<<endl;
+				cin>>b;
+				p=mul(a,b);
+				cout<<"multiplicacion = "<<p<<endl;
+			}
+		    break;
+		    
+		    case 3:
+		    	{
+		    	   cout<<"ingresar el valor de a "<<endl;
+		    	   cin>>a;
+				   cout<<"ingresar el valor de b "<<endl;
+				   
+				   cin>>b;
+				   resta=a-b;
+				   cout<<"resta = "<<resta<<endl;	
+		    		
+				}break;
+		case 4: 
+		cout<<"fin del programa "<<endl;
+		break;   
+		
+		
+	}
+	
+} while(opc!=4);
+	return 0;
+}
